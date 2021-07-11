@@ -10,8 +10,8 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
-@Table(name = "FERRAMENTA_01")
-public class Ferramenta {
+@Table(name = "FINALIDADE_01")
+public class Finalidade {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -19,8 +19,5 @@ public class Ferramenta {
 
     @Column(length = 200)
     private String name;
-
-    @Column(length = 300)
-    private String destination;
 
 }
