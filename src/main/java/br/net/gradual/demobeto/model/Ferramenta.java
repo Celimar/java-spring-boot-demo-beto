@@ -20,7 +20,9 @@ public class Ferramenta {
     @Column(length = 200)
     private String name;
 
-    @Column(length = 300)
-    private String destination;
+    @ManyToOne
+    @JoinColumn(name = "finalidadeId", referencedColumnName = "id",
+            foreignKey = @ForeignKey(name = "fk_ferramenta_01__finalidade"))
+    private Finalidade finalidade;
 
 }
